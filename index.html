@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Denilson Morais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/acordeon.css">
+    <link rel="stylesheet" href="css/languages.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/skills.css">
+   
+</head>
+<body>
+   <main class="main">
+        <header class="header">
+            <h1 class="title">Olá <br> sou Denilson Aparecido de Morais</h1>
+            <img src="images/Profile_photo.jpeg" alt="Imagem de perfil " class="photo">
+            <div class="informations">
+                <p class="profession">Developer</p>
+                <p class="location">Bambuí-MG</p>
+                <p class="phone">(37) 9 9999 9999</p>
+                <p class="email">denilsonapmorais@gmail.com</p>
+            </div>    
+        </header>
+        <section class="acordeon">
+            <button class = "trigger" type="button"><span>Skills</span></button>
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas </h3>
+                        <ul>
+                            <li>
+                                <img src="images/python.svg" alt="react" title="react">
+                            </li>
+                            <li>
+                                <img src="images/react.svg" alt="react" title="react">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="habilities">
+                        <h3>Pessoal </h3>
+                        <ul>
+                            <li>
+                                Liderança
+                            </li>
+                            <li>
+                                trabalho em equipe
+                            </li>
+                            <li>Comunicação</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon ">
+            <button class = "trigger" type="button"><span>Idiomas</span></button>
+            <div class="content">
+                <ul class="languages">
+                    <li class="check">Português</li>
+                    <li class="check">Inglês</li>
+                </ul>
+            </div>
+        </section>
+        <section class="acordeon ">
+            <button class = "trigger" type="button"><span>Portfolio</span></button>
+            <div class="content">
+              
+                <ul class="portfolio">
+                    <li>
+                        <span class="title git">Android Project</span>
+                        <a href="https://denilsonapmorais.github.io/android-project/" target="_blank">Link para o projeto</a>
+                    </li>
+                    <li>
+                        <span class="title git ">Login Responsivo</span>
+                        <a href="https://denilsonapmorais.github.io/Projeto-Login-Responsivo/"  target="_blank">Link para o projeto</a>
+                    </li>
+                    <li>
+                        <span class="title git ">Projeto cordel </span>
+                        <a href="https://denilsonapmorais.github.io/Site-Projeto-Cordel/"  target="_blank">Link para o projeto</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon ">
+            <button class = "trigger expTitle" type="button" ><span>Experiencia profissional</span></button>
+            <div class="content">
+              
+                <ul class="experience">
+                    <li class="lines">
+                        <h3>FullStack Developer at Alude</h3>
+                        <p class="period">Fev 2024 - Current</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis, veritatis suscipit eius a aliquam incidunt earum cum consectetur iusto vitae. Dolores, repudiandae voluptas voluptatibus nulla enim fugiat maiores quis.</p>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+    </main>
+   <script src="/Portfolio/acordeon.js"></script>
+</body>
+</html>
+<!-- npm instal
+ l http-server -g 
+Este comando installa o o server local para testar nosso site
+http-server ./ para executar na pasta atual  
+-->

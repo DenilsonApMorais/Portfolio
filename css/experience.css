@@ -1,0 +1,25 @@
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 1rem;
+}
+.experience .period{
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image:url('../images/calender.svg') ;
+    padding-left: 2rem;
+    text-wrap: nowrap;
+   
+}
+.expTitle {
+  
+   text-align: start;
+}

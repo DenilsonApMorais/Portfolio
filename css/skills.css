@@ -1,0 +1,44 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.skills .tools ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap:wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills .tools ul img {
+    max-width: 50px;
+    margin: 1rem;
+    
+}
+.skills .habilities ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap:wrap;
+    margin: 0;
+    padding: 0;
+    
+}
+.skills .habilities ul li {
+    margin-left: 1rem;
+    padding: .5rem;
+}
+
+@media only screen and (min-width: 768px){
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+}
