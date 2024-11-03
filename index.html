@@ -22,13 +22,13 @@
 <body>
    <main class="main">
         <header class="header">
-            <h1 class="title">Olá <br> sou Denilson Aparecido de Morais</h1>
-            <img src="images/Profile_photo.jpeg" alt="Imagem de perfil " class="photo">
+            <h1 class="title">Olá <br> sou <span id="name"></span></h1>
+            <img src="images/Profile_photo.jpeg" alt="Imagem de perfil " class="photo" id="photo">
             <div class="informations">
-                <p class="profession">Developer</p>
-                <p class="location">Bambuí-MG</p>
-                <p class="phone">(37) 9 9999 9999</p>
-                <p class="email">denilsonapmorais@gmail.com</p>
+                <p class="profession" id="profession" ></p>
+                <p class="location" id="location"></p>
+                <p class="phone" id="phone" ></p>
+                <p class="email" id="email"></p>
             </div>    
         </header>
         <section class="acordeon">
@@ -37,7 +37,7 @@
                 <div class="skills">
                     <section class="tools">
                         <h3>Ferramentas </h3>
-                        <ul>
+                        <ul id="hardSkills">
                             <li>
                                 <img src="images/python.svg" alt="react" title="react">
                             </li>
@@ -48,15 +48,7 @@
                     </section>
                     <section class="habilities">
                         <h3>Pessoal </h3>
-                        <ul>
-                            <li>
-                                Liderança
-                            </li>
-                            <li>
-                                trabalho em equipe
-                            </li>
-                            <li>Comunicação</li>
-                        </ul>
+                        <ul id="softSkills"></ul>
                     </section>
                 </div>
             </div>
@@ -65,30 +57,14 @@
         <section class="acordeon ">
             <button class = "trigger" type="button"><span>Idiomas</span></button>
             <div class="content">
-                <ul class="languages">
-                    <li class="check">Português</li>
-                    <li class="check">Inglês</li>
-                </ul>
+                <ul class="languages" id="languages"></ul>
             </div>
         </section>
         <section class="acordeon ">
             <button class = "trigger" type="button"><span>Portfolio</span></button>
             <div class="content">
               
-                <ul class="portfolio">
-                    <li>
-                        <span class="title git">Android Project</span>
-                        <a href="https://denilsonapmorais.github.io/android-project/" target="_blank">Link para o projeto</a>
-                    </li>
-                    <li>
-                        <span class="title git ">Login Responsivo</span>
-                        <a href="https://denilsonapmorais.github.io/Projeto-Login-Responsivo/"  target="_blank">Link para o projeto</a>
-                    </li>
-                    <li>
-                        <span class="title git ">Projeto cordel </span>
-                        <a href="https://denilsonapmorais.github.io/Site-Projeto-Cordel/"  target="_blank">Link para o projeto</a>
-                    </li>
-                </ul>
+                <ul class="portfolio" id="portfolio"></ul>
             </div>
         </section>
 
