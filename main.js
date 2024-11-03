@@ -40,10 +40,21 @@ function getIdiomas(profileData){
 
 function getPotfolio(profileData) {
     const portfolio = document.getElementById('portfolio')
-    portfolio.innerHTML = profileData.portfolio.map(p => ` <li>
-                        <span class="title git">${p.name}}</span>
-                        <a href="${p.url}" target="_blank">Link para o projeto</a>
-                    </li> `).join('')
+    portfolio.innerHTML = profileData.portfolio.map(p =>
+        `<li>
+            <span class="title git">${p.name}</span>
+            <a href="${p.url}" target="_blank">Link para o projeto</a>
+        </li> `).join('')
+}   
+
+function getExperience(profileData) {
+    const experience = document.getElementById('experience')
+    experience.innerHTML = profileData.professionalExperience.map(exp =>
+        `<li class="lines">
+                        <h3>${exp.name}</h3>
+                        <p class="period">${exp.period}</p>
+                        <p>${exp.description}</p>
+                    </li>`).join('')
 }   
 
 (async () => {
@@ -53,4 +64,5 @@ function getPotfolio(profileData) {
     getHardSkills(profileData)
     getIdiomas(profileData)
     getPotfolio(profileData)
+    getExperience(profileData)
 })()

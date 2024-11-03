@@ -17,17 +17,16 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/skills.css">
-   
 </head>
 <body>
    <main class="main">
         <header class="header">
             <h1 class="title">Olá <br> sou <span id="name"></span></h1>
-            <img src="images/Profile_photo.jpeg" alt="Imagem de perfil " class="photo" id="photo">
+            <img src="" alt="" class="photo" id="photo">
             <div class="informations">
-                <p class="profession" id="profession" ></p>
+                <p class="profession" id="profession"></p>
                 <p class="location" id="location"></p>
-                <p class="phone" id="phone" ></p>
+                <p class="phone" id="phone"></p>
                 <p class="email" id="email"></p>
             </div>    
         </header>
@@ -37,14 +36,7 @@
                 <div class="skills">
                     <section class="tools">
                         <h3>Ferramentas </h3>
-                        <ul id="hardSkills">
-                            <li>
-                                <img src="images/python.svg" alt="react" title="react">
-                            </li>
-                            <li>
-                                <img src="images/react.svg" alt="react" title="react">
-                            </li>
-                        </ul>
+                        <ul id="hardSkills"></ul>
                     </section>
                     <section class="habilities">
                         <h3>Pessoal </h3>
@@ -53,7 +45,6 @@
                 </div>
             </div>
         </section>
-
         <section class="acordeon ">
             <button class = "trigger" type="button"><span>Idiomas</span></button>
             <div class="content">
@@ -63,26 +54,15 @@
         <section class="acordeon ">
             <button class = "trigger" type="button"><span>Portfolio</span></button>
             <div class="content">
-              
                 <ul class="portfolio" id="portfolio"></ul>
             </div>
         </section>
-
         <section class="acordeon ">
             <button class = "trigger expTitle" type="button" ><span>Experiencia profissional</span></button>
-            <div class="content">
-              
-                <ul class="experience">
-                    <li class="lines">
-                        <h3>FullStack Developer at Alude</h3>
-                        <p class="period">Fev 2024 - Current</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus perferendis, veritatis suscipit eius a aliquam incidunt earum cum consectetur iusto vitae. Dolores, repudiandae voluptas voluptatibus nulla enim fugiat maiores quis.</p>
-                    </li>
-                    
-                </ul>
+            <div class="content"> 
+                <ul class="experience" id="experience"></ul>
             </div>
         </section>
-
     </main>
    <script src="/Portfolio/acordeon.js"></script>
    <script src="/Portfolio/api.js"></script>
